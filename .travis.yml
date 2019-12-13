@@ -10,7 +10,7 @@ matrix:
   include:
     - env: COVERAGE=1
       gemfile: Gemfile
-      rvm: 2.1.0
+      rvm: 2.6.5
 rvm:
   - 2.6.5
   - ruby-head
