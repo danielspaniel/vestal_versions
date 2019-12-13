@@ -3,6 +3,8 @@ branches:
     - master
 gemfile:
   - Gemfile
+  - gemfiles/activerecord_5_2.gemfile
+  - gemfiles/activerecord_6_0.gemfile
 language: ruby
 matrix:
   allow_failures:
