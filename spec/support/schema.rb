@@ -3,19 +3,12 @@ ActiveRecord::Base.establish_connection(
   :database => File.expand_path('../../test.db', __FILE__)
 )
 
-MIGRATION_CLASS =
-  if ActiveRecord::VERSION::MAJOR >= 5
-    ActiveRecord::Migration[4.2]
-  else
-    ActiveRecord::Migration
-  end
-
-class CreateSchema < MIGRATION_CLASS
-  def self.up
+class CreateSchema < ActiveRecord::Migration[4.2]
+  def change
     create_table :users, :force => true do |t|
       t.string :first_name
       t.string :last_name
-      t.timestamps null: false
+      t.timestamps null: true
     end
 
     create_table :vestal_versions, :force => true do |t|
@@ -26,7 +19,7 @@ class CreateSchema < MIGRATION_CLASS
       t.integer :number
       t.integer :reverted_from
       t.string :tag
-      t.timestamps null: false
+      t.timestamps null: true
     end
   end
 end
