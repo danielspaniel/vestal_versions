@@ -21,3 +21,4 @@ _yardoc
 .ruby-gemset
 .ruby-version
 bin/
+.idea/
