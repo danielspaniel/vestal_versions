@@ -1,5 +1,4 @@
-![Build](https://github.com/duckworth/vestal_versions/actions/workflows/test.yml/badge.svg)
-
+[![Build Status](https://github.com/duckworth/vestal_versions/actions/workflows/test.yml/badge.svg)](https://github.com/duckworth/vestal_versions/actions/workflows/test.yml)
 # Vestal Versions
 
 Finally, DRY ActiveRecord versioning!
