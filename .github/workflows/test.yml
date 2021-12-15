@@ -4,9 +4,11 @@ name: Tests
   push:
     branches:
     - master
+    - develop
   pull_request:
     branches:
     - master
+    - develop
 jobs:
   test:
     runs-on: ubuntu-20.04
