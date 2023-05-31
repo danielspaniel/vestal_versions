@@ -1,6 +1,9 @@
 require 'spec_helper'
 
 describe VestalVersions::Deletion do
+  before do
+    ActiveRecord.use_yaml_unsafe_load = true
+  end
   let(:name){ 'Steve Richert' }
   subject{ DeletedUser.create(:first_name => 'Steve', :last_name => 'Richert') }
 
