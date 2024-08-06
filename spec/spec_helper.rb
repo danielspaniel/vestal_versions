@@ -22,7 +22,7 @@ RSpec.configure do |c|
     User.prepare_versioned_options({})
   end
 
-  c.order = 'random'
+  c.order = 'random'   
 end
 
 Dir[File.expand_path('../support/*.rb', __FILE__)].each{|f| require f }
